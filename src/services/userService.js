@@ -21,7 +21,7 @@ module.exports = class userService {
             const user = await User.findOne({ username, password });
             return user;
         } catch (error) {
-            console.log(`Error seraching user -> ${error}`);
+            console.log(`Error searching user -> ${error}`);
             throw error.message;
         }
     }
@@ -31,7 +31,7 @@ module.exports = class userService {
             const user = await User.findById(userId);
             return user;
         } catch (error) {
-            console.log(`Error seraching user -> ${error}`);
+            console.log(`Error searching user -> ${error}`);
             throw error.message;
         }
     }
